@@ -1,0 +1,138 @@
+:root {
+  --main-color: #2196f3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+span {
+  font-weight: bold;
+  color: #009688;
+}
+
+.game {
+  background-color: #eee;
+  min-height: 100vh;
+}
+
+.name {
+  background-color: var(--main-color);
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+
+@media (max-width: 920px) {
+  .container {
+    max-width: 400px;
+  }
+}
+
+.messege {
+  background-color: white;
+  margin: 15px 0;
+  padding: 10px;
+  text-align: center;
+  user-select: none;
+}
+
+.messege span:first-of-type {
+  cursor: pointer;
+}
+
+.messege span::before {
+  content: "[ ";
+}
+
+.messege span::after {
+  content: " ]";
+}
+
+.start {
+  background-color: #009688;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.word {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--main-color);
+  user-select: none;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  font-size: 25px;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 13px;
+  border: 3px solid var(--main-color);
+  border-radius: 6px;
+  caret-color: var(--main-color);
+  outline: none;
+}
+
+.upcoming-words {
+  background-color: white;
+  margin: 15px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.upcoming-words div {
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  user-select: none;
+}
+
+.control {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.finish {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0;
+  padding: 15px;
+}
+
+.finish.good {
+  color: var(--main-color);
+}
+
+.finish.bad {
+  color: red;
+}
